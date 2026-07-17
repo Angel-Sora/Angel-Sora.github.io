@@ -460,9 +460,7 @@
                     <h3>Windows</h3>
                     <ul>
                         <li>cmd / PowerShell (Get-Process, Get-Service)</li>
-                        <li>Реестр (reg query)</li>
                         <li>Политики (gpedit.msc) · Event (eventvwr.msc)</li>
-                        <li>NTFS · планировщик задач</li>
                     </ul>
                 </div>
             </div>
@@ -473,15 +471,7 @@
             <div class="grid-2col">
                 <div class="card">
                     <h3>SQLi</h3>
-                    <ul>
-                        <li>Union / Error / Boolean / Time / Second-order</li>
-                        <li>WAF bypass (комментарии, регистр, кодирование)</li>
-                    </ul>
                     <h3 style="margin-top:12px;">XSS</h3>
-                    <ul>
-                        <li>Reflected / Stored / DOM</li>
-                        <li>Кража кук + редирект · Keylogger на JS</li>
-                    </ul>
                 </div>
                 <div class="card">
                     <h3>Другие</h3>
@@ -489,8 +479,6 @@
                         <li>CSRF (PoC генерация)</li>
                         <li>SSRF (метаданные AWS/GCP, file://, gopher://)</li>
                         <li>JWT (none alg, kid injection, RS256→HS256)</li>
-                        <li>CORS (Origin reflection, null origin)</li>
-                        <li>Path Traversal / LFI / RFI</li>
                     </ul>
                 </div>
             </div>
@@ -533,7 +521,6 @@
                     <h3>Bash / PowerShell / Регулярки</h3>
                     <ul>
                         <li>Эскалация привилегий · Скрипты сбора инфо</li>
-                        <li>Регулярные выражения: поиск IP, email, паролей в логах</li>
                     </ul>
                     <div class="tag-group" style="margin-top:10px;">
                         <span class="tag">C++</span>
@@ -572,8 +559,6 @@
             <div class="card">
                 <ul class="list-double">
                     <li>MITRE ATT&amp;CK</li>
-                    <li>Cyber Kill Chain</li>
-                    <li>PTES / OWASP Testing Guide</li>
                     <li>Black / Gray / White box</li>
                     <li>Rule of Engagement</li>
                     <li>CVSS (базовое понимание)</li>
@@ -581,20 +566,9 @@
             </div>
         </section>
 
-        <section>
-            <div class="section-title"><span class="num">08</span> Пост-эксплуатация</div>
-            <div class="card">
-                <ul class="list-double">
-                    <li>Проверка <code>sudo -l</code></li>
-                    <li>Поиск SUID-файлов</li>
-                    <li>Пароли в <code>config.php</code>, <code>web.config</code>, реестре</li>
-                    <li><code>whoami /priv</code>, <code>net user</code>, чтение <code>/proc</code></li>
-                </ul>
-            </div>
-        </section>
 
         <section>
-            <div class="section-title"><span class="num">09</span> Отчётность</div>
+            <div class="section-title"><span class="num">08</span> Отчётность</div>
             <div class="card">
                 <ul>
                     <li>Структура: риск → описание → воспроизведение → рекомендации</li>
@@ -605,7 +579,7 @@
         </section>
 
         <section>
-            <div class="section-title"><span class="num">10</span> Лабораторная практика</div>
+            <div class="section-title"><span class="num">09</span> Лабораторная практика</div>
             <div class="highlight-box">
                 <div class="row">
                     <span class="stat"><strong>TryHackMe</strong> — 67+ комнат</span>
@@ -617,19 +591,9 @@
             </div>
         </section>
 
-        <section>
-            <div class="section-title"><span class="num">11</span> Soft Skills</div>
-            <div class="card">
-                <ul class="list-double">
-                    <li>Объяснение уязвимостей разработчикам</li>
-                    <li>Этика: только с письменного разрешения</li>
-                    <li>Отличие CVE / CWE / CAPEC / эксплойта</li>
-                </ul>
-            </div>
-        </section>
 
         <section>
-            <div class="section-title"><span class="num">12</span> Active Directory</div>
+            <div class="section-title"><span class="num">10</span> Active Directory</div>
             <div class="grid-2col">
                 <div class="card">
                     <h3>Концепции</h3>
@@ -643,13 +607,7 @@
                 <div class="card">
                     <h3>Атаки</h3>
                     <ul>
-                        <li><strong>Kerberoasting</strong> — запрос SPN → взлом TGS</li>
-                        <li><strong>Pass‑the‑Hash</strong> (PtH) — wmiexec, psexec, mimikatz</li>
-                        <li><strong>Pass‑the‑Ticket</strong> (PtT)</li>
-                        <li><strong>Golden Ticket</strong> (подделка TGT)</li>
-                        <li><strong>Silver Ticket</strong> (подделка TGS)</li>
-                        <li><strong>DCSync</strong> — имитация репликации DC</li>
-                        <li><strong>ACL abuse</strong> — GenericAll, WriteOwner, WriteDacl, ForceChangePassword, AddMember</li>
+                        <li><strong>Kerberoasting</strong> — запрос SPN → взлом TGS</li> 
                     </ul>
                 </div>
             </div>
